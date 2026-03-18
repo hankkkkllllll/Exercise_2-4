@@ -13,7 +13,19 @@ This project implements a **Conditional Generative Adversarial Network (CGAN)** 
 
 This project is configured and optimized for hardware acceleration on Windows 10/11 systems equipped with an **NVIDIA RTX 4070** GPU. Please follow the steps below to set up your environment:
 
-### 1. Create the Virtual Environment
-Use Anaconda or Miniconda to create an environment with the specific Python version required for TensorFlow 1.x compatibility:
-```bash
-conda create -n rayleigh_gan python=3.9.19 -y
+1. **Create the virtual environment with the specific Python version:**
+    ```bash
+    conda create -n Excercise_2.4 python=3.9.19 -y
+
+2. **Activate the environment:**
+    ```bash
+    conda activate Excercise_2.4
+
+3. **Install CUDA Toolkit via Conda:**
+    ```bash
+    conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0
+
+4. **Install all required packages via requirements.txt:**
+   ```bash
+   pip install -r requirements.txt
+   
