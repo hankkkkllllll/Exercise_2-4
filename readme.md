@@ -21,11 +21,11 @@ This project is configured and optimized for hardware acceleration on Windows 10
     ```bash
     conda activate Excercise_2.4
 
-3. **Install CUDA Toolkit via Conda:**
+3. **Install GPU Support (CUDA & cuDNN)**
     ```bash
     conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0
 
-4. **Install all required packages via requirements.txt:**
+4. **Install the required Python packages, including the TensorFlow version that supports native Windows GPU execution (while using TF 1.x compat mode):**
    ```bash
    pip install -r requirements.txt
    
